@@ -1,0 +1,299 @@
+h1, h2, p, li{
+    color: #FAF9FA;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    word-spacing: 0.2rem;
+}
+
+button{
+    border: none;
+    outline: none;
+}
+
+.main-heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 12rem;
+    padding: 1rem;
+    /* background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(70, 8, 193) 100%); */
+}
+
+.main-heading-container > h1{
+    font-size: 8rem;
+    font-weight: 800;
+}
+
+.main-subheading-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-subheading-container > h2{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 3rem;
+}
+
+.number-highl{
+    color: black;
+    background-color: #FAF9FA;
+    font-weight: 600;
+    padding: 0.3rem;
+    border-radius: 2px;
+}
+
+.highl-prod-text{
+    color: #9966FF;
+    font-weight: 600;
+}
+
+.product-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.product-main-container > h1{
+    font-weight: 400;
+    text-align: center;
+    margin: 40px;
+    font-size: 3rem;
+    background: -webkit-linear-gradient(-30deg, rgb(255, 255, 255) 0%, rgb(70, 8, 193) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blob{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+
+.product-subcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 2rem;
+}
+
+.product-subcontainer > img{
+    max-width: 600px;
+    max-height: 548px;
+    height: auto;
+    flex-basis: 67%;
+}
+.product-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-basis: 33%;
+    gap: 1rem;
+    /* border: 2px solid blue; */
+}
+
+.product-text-container > h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.prod-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.prod-button-container > button{
+    background-color: #000;
+    color: #9966FF;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #9966FF;
+}
+
+.prod-button-container > button:last-child{
+    background-color: #9966FF;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* media queries for max-width 1100px */
+@media screen and (max-width: 1100px){
+    .main-heading-container{
+        margin: 8rem 0;
+    }
+
+    .main-heading-container > h1{
+        font-size: 5rem;
+    }
+
+    .main-subheading-container{
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .main-subheading-container > h2{
+        font-size: 0.8rem;
+        margin: 0 1rem;
+    }
+
+    .product-main-container{
+        margin: 0;
+    }
+
+    .product-main-container > h1{
+        font-weight: 100;
+        text-align: center;
+        margin: 40px;
+        font-size: 2.5rem;
+    }
+
+    .product-subcontainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .product-subcontainer:last-child{
+        flex-direction: column-reverse;
+    }
+
+    .product-subcontainer > img{
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        flex-basis: 100%;
+    }
+
+    .product-text-container{
+        align-items: center;
+        justify-content: center;
+        flex-basis: 100%;
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    .product-text-container > h2{
+        font-size: 1.6rem;
+        font-weight: 200;
+    }
+
+    .prod-button-container{
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .prod-button-container > button{
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid #9966FF;
+    }
+
+    .prod-button-container > button:last-child{
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+
+/* media queries for max-width 768px */
+@media screen and (max-width: 768px){
+    .main-heading-container{
+        margin: 8rem 0;
+    }
+
+    .main-heading-container > h1{
+        font-size: 5rem;
+    }
+
+    .main-subheading-container{
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .main-subheading-container > h2{
+        font-size: 0.8rem;
+        margin: 0 1rem;
+    }
+
+    .product-main-container{
+        margin: 0;
+    }
+
+    .product-main-container > h1{
+        font-weight: 100;
+        text-align: center;
+        margin: 40px;
+        font-size: 2.5rem;
+    }
+
+    .product-subcontainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    .product-subcontainer:last-child{
+        flex-direction: column-reverse;
+    }
+
+    .product-subcontainer > img{
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        flex-basis: 100%;
+    }
+
+    .product-text-container{
+        align-items: center;
+        justify-content: center;
+        flex-basis: 100%;
+        padding: 1rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        
+    }
+
+    .product-text-container > h2{
+        font-size: 1.6rem;
+        font-weight: 200;
+    }
+
+    .prod-button-container{
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .prod-button-container > button{
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid #9966FF;
+    }
+
+    .prod-button-container > button:last-child{
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
