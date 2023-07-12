@@ -1,0 +1,43 @@
+.footer-grid{
+    background-color: #0E0A0F;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-inline: 3rem;
+    background-image: url('/src/components/images/footer-background.png');
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    
+    color: white;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+.footer-content-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-grid li{
+    list-style: none;
+    font-weight: 100;
+}
+
+.footer-grid .list-title{
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+.footer-grid .socials
+{
+    font-weight: 700;
+    padding-top: 1rem;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px){
+    .footer-grid{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    .footer-content-grid{
+        display: none;
+    }
+}
